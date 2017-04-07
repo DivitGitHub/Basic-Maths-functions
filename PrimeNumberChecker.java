@@ -9,7 +9,7 @@ public class PrimeNumberChecker {
 	 * @param check the number
 	 * @return returns a boolean
 	 */
-	private static boolean primeNumberChecker(int number) {
+	public static boolean primeNumberChecker(int number) {
 		int sqrtOfNumber = (int) Math.sqrt(number);	//No need to check for multiples after the square root of the param.
 
 		//edge case
