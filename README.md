@@ -1,1 +1,1 @@
-# Basic-Maths-functions
+# Basic-Maths-functions-in-java
