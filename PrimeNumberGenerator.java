@@ -1,5 +1,3 @@
-package PrimeNumber;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.PrimitiveIterator.OfDouble;
