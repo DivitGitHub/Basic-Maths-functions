@@ -15,11 +15,11 @@ public class PrimeNumberGenerator {
 		//iterate through the list
 		for(Integer prime: list) {
 			count++;
-			System.out.print(prime+ " ");
+			System.out.print(prime+ " "); //prints 2 3 5 7 11 13 17 19 23 29 31 37. . . after the iteration is done
 		}
 		
 		System.out.println();
-		System.out.println("Number of prime numbers: "+count);
+		System.out.println("Number of prime numbers: "+count);	//prints Number of prime numbers: 12
 		
 	}
 	
