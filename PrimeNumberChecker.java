@@ -1,7 +1,7 @@
 public class PrimeNumberChecker {
 
 	public static void main(String[] args) {
-		System.out.println(primeNumberChecker(37)); // returns 
+		System.out.println(primeNumberChecker(37)); // returns true
 	}
 
 	/*
