@@ -7,11 +7,16 @@ public class Factorial {
 	}
 	
 	/*
-	*Example 7*6*5*4*3*2
+	*Returns factorial of desired number
+	*Example 7! = 7*6*5*4*3*2...
 	*@param finds the factorial of int
-	*@return returns long
+	*@return long, if integer is negative, it will return -1;
 	*/
 	public static long factorial(int number) {
+		if (number < 0) {
+			return -1;
+		}
+		
 		if (number == 1 || number == 0) {
 			return 1;
 		}
