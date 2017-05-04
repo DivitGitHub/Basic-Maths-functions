@@ -12,6 +12,8 @@ public class QuadraticEquation {
 			for (double solution : solutions) {
 				System.out.print(solution + ", "); // prints -1.0, -1.0, (both solutions are equal hence there's 1 solution)
 			}
+		} else {
+			System.out.print("No real solutions");
 		}
 	}
 
