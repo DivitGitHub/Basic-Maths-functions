@@ -12,16 +12,11 @@ public class Factorial {
 	*@param finds the factorial of int
 	*@return long, if integer is negative, it will return -1;
 	*/
-	public static long factorial(int number) {
-		if (number < 0) {
-			return -1;
+	public static int factorial(int number) {
+		int result = 1;
+		for(int i = 2; i <= number; i++) {
+			result = result*i;
 		}
-		
-		if (number == 1 || number == 0) {
-			return 1;
-		}
-		
-		//calls itself
-		return number * factorial(number-1);	
+		return result;
 	}
 }
