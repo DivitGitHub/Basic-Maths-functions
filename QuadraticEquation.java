@@ -18,11 +18,15 @@ public class QuadraticEquation {
 	}
 
 	/*
-	 * Solves quadratic equations
-	 * 
+	 * Solves quadratic equations by using the formula below.
+	 *
+	 * -b +- sqrt b^2 -4ac
+	 *  ___________________
+	 *  	 2a
+	 *
 	 * @param 3 int. Example: a=1, b = 2 and c = 3 from x^2 + 2x + 3;
 	 * 
-	 * @return an array of double with solution, or null if there's no solution.
+	 * @return 2 solutions in an array, or null if there's no solution.
 	 */
 	public static double[] quadratic(int a, int b, int c) {
 		if (a <= 0) {
@@ -31,21 +35,15 @@ public class QuadraticEquation {
 
 		double[] solutions = new double[2];
 
-		/*
-		 * -b +- sqrt b^2 -4ac
-		 *  ___________________
-		 *  	 2a
-		 */
 		int bSquaredMinus4ac = (int) Math.pow(b, 2) - (4 * a * c);
 
-		// return null since we cannot square root a minus number...
+		// Return null since we cannot square root a minus number...
 		if (bSquaredMinus4ac < 0) {
 			return null;
 		}
 
 		double sqrtPart = Math.sqrt(bSquaredMinus4ac);
 
-		// performing the forumla...
 		double answer1 = (-b + sqrtPart) / (2 * a); // first solution
 		double answer2 = (-b - sqrtPart) / (2 * a); // second solution
 
