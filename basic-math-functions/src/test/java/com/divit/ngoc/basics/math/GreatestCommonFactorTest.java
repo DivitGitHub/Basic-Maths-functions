@@ -16,6 +16,7 @@ class GreatestCommonFactorTest {
 
 	@Test
 	void testGetGcf() {
+		assertEquals(-1, gcf.getGcf(0, -1));
 		assertEquals(10, gcf.getGcf(10, 20));
 		assertEquals(11, gcf.getGcf(44, 77));
 	}

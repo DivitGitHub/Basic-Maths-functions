@@ -18,6 +18,8 @@ class QuadraticEquationTest {
 	void testSolveQuadratic() {
 		double[] result = { -1.0, -1.0 };
 		assertArrayEquals(result, quadraticEquation.solveQuadratic(2, 4, 2));
+		assertNull(quadraticEquation.solveQuadratic(0, 2, 4));
+		assertNull(quadraticEquation.solveQuadratic(10, 2, 2));
 	}
 
 }

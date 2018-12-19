@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class PrimeNumberCheckerTest {
 
 	private PrimeNumberChecker checker;
-	
+
 	@BeforeEach
 	void setUp() throws Exception {
 		checker = new PrimeNumberChecker();
@@ -20,7 +20,7 @@ class PrimeNumberCheckerTest {
 		assertTrue(checker.isPrimeNumber(2));
 		assertFalse(checker.isPrimeNumber(4));
 		assertTrue(checker.isPrimeNumber(37));
-		assertFalse(checker.isPrimeNumber(38));
+		assertFalse(checker.isPrimeNumber(39));
 	}
 
 }
