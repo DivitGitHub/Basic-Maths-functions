@@ -24,7 +24,7 @@ public class PrimeNumberGenerator {
 
 		List<Integer> list = new ArrayList<Integer>();
 		list.add(2);
-		// Check every number starting from 2 to see if it's a prime or not...
+		// Check every number starting from 3 to see if it's a prime or not...
 		for (int i = 3; i <= number; i++) {
 
 			// No need to check for multiples after the square root of the number we're
