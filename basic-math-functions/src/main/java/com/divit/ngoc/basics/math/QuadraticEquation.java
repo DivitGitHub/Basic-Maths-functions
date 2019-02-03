@@ -5,12 +5,12 @@ public class QuadraticEquation {
 	/*
 	 * Solves quadratic equations by using the formula below.
 	 *
-	 * -b +- sqrt b^2 -4ac
+	 * -b +- sqrt (b^2 -4ac)
 	 *  ___________________
 	 *  	 2a
 	 *
-	 *
-	 * @param 3 int. Example: a=1, b = 2 and c = 3 from x^2 + 2x + 3;
+	 * @param int a, int b, int c. 
+	 * Example: a = 1, b = 2 and c = 3 from x^2 + 2x + 3;
 	 * 
 	 * @return 2 solutions in an array, or null if there's no solution.
 	 */
@@ -30,11 +30,11 @@ public class QuadraticEquation {
 
 		double sqrtPart = Math.sqrt(bSquaredMinus4ac);
 
-		double answer1 = (-b + sqrtPart) / (2 * a); // first solution
-		double answer2 = (-b - sqrtPart) / (2 * a); // second solution
+		double firstSolution = (-b + sqrtPart) / (2 * a);
+		double secondSolution = (-b - sqrtPart) / (2 * a);
 
-		solutions[0] = answer1;
-		solutions[1] = answer2;
+		solutions[0] = firstSolution;
+		solutions[1] = secondSolution;
 
 		return solutions;
 	}
