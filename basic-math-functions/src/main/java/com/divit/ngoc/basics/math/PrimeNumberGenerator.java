@@ -36,7 +36,7 @@ public class PrimeNumberGenerator {
 			if (i % 2 == 0) {
 				isPrime = false;
 			}
-			else if {
+			else {
 				for (int k = 3; k <= sqrtOfi; k += 2) {
 					if (i % k == 0) {
 						isPrime = false;
@@ -44,6 +44,7 @@ public class PrimeNumberGenerator {
 					}
 				}
 			}
+
 			if (isPrime) {
 				list.add(i);
 			}
